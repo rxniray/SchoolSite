@@ -1,0 +1,7 @@
+.main{flex: 1 1 auto;}
+
+.main-image{
+    width: 75%;
+    display: block;
+    margin: 0 auto;
+}
