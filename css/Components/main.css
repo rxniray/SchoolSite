@@ -1,7 +1,286 @@
-.main{flex: 1 1 auto;}
+.main{flex: 1 1 auto; margin-top: 50px;}
+
+/* MAIN-IMAGE */
 
 .main-image{
     width: 75%;
-    display: block;
     margin: 0 auto;
+}
+
+.main-image{
+    width: 100%;
+}
+
+/* MAIN - section */
+
+.main {
+}
+.page__main {
+    
+}
+
+.main-section {
+    margin-top: 3.125rem;
+    margin-bottom: 3.125rem;
+}
+
+.main-section__content {
+    
+    margin: 0 auto;
+
+    width: 1000px;
+    /* background-color: #f3f2f2; */
+    border-radius: 15px;
+
+    box-shadow:  0px 1px 5px rgb(156, 156, 156);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.main-section__content h2{
+    text-align: center;
+    margin: 15px 0;
+    font-size: 1.5625rem;
+    font-weight: 800;
+}
+
+.main-section__about-content {
+    width: 90%;
+}
+
+.about-content__blocks {
+    width: 100%;
+
+    display: flex; 
+    justify-content: space-between;
+}
+
+.about__block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+
+    margin-bottom: 35px;
+}
+
+.about__block-info {
+    position: absolute;
+}
+
+.about__block-info a{
+    color: white;
+
+    transition: .3s;
+}
+
+.about-image {
+    width: 250px;
+    height: 250px;
+
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+
+    border-radius: 10px;
+
+    box-shadow:  0px 1px 15px rgb(156, 156, 156);
+
+
+}
+
+.about-image img{
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+
+    transition: .3s;
+
+    object-fit: cover;
+    border-radius: 10px;
+
+    filter: brightness(50%)
+}
+
+.about__block:hover .about__block-info {
+    font-size: 20px;
+}
+
+.about__block:hover img {
+    width: 110%;
+    height: 110%;
+    filter: brightness(40%);
+    transition: .3s;
+}
+
+/* SECOND - section */
+
+.page__main {
+}
+.news-section {
+    margin-bottom: 100px;
+}
+.news-section__container {
+
+}
+.news-section__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    box-shadow:  0px 1px 5px rgb(156, 156, 156);
+    border-radius: 15px;
+}
+.news-search__block {
+    margin-top: 20px;
+
+    display: flex;
+    width: 95%;
+
+    justify-content: space-between;
+}
+
+.news-search__block h2{
+    font-size: 1.25rem;
+    font-weight: 800;
+}
+
+.search__block{
+    display: flex;
+}
+
+.search__block input{
+    padding-left: 10px;
+    height: 20px;
+    border: 2px solid rgb(214, 214, 214);
+    border-radius: 50px 0 0 50px ;
+
+    transition: 0.4s;
+}
+
+.search__block input:focus{
+    padding-left: 10px;
+    height: 20px;
+    border: 2px solid rgb(142, 142, 142);
+    border-radius: 50px 0 0 50px ;
+}
+
+.search__block button{
+    height: 23px;
+
+    width: 80px;
+    border: 2px solid rgb(214, 214, 214);
+    border-radius:  0 50px 50px 0;
+    
+    transition: 0.4s;
+}
+
+.search__block input:focus + button{
+    border: 2px solid rgb(142, 142, 142);
+}
+
+
+
+.news-block__list{
+    margin-top: 20px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+
+.news-block {
+    width: 1000px;
+    border: 2px solid rgb(214, 214, 214);
+
+    padding: 15px 15px;
+    border-radius: 15px;
+
+    transition: .3s;
+}
+
+.news-block:hover{
+    transform: translate(0, -5px);
+    border: 2px solid  rgb(186, 186, 186);
+
+    box-shadow:  0px 1px 5px rgb(186, 186, 186);
+
+}
+
+.news-block__content {
+    display: flex;
+    flex-direction: row;
+
+    gap: .9375rem;
+}
+
+.news-image {
+    width: 500px;
+    height: 150px;
+
+    border-radius: 15px;
+}
+
+.news-image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    box-shadow:  0px 1px 5px rgb(156, 156, 156);
+
+    object-fit: cover;
+}
+
+.news-text{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    margin-left: 10px;
+    gap: 10px;
+}
+
+.news-text h3 a{
+    font-size: 20px;
+    font-weight: 600;
+
+    transition: .3s;
+
+    color: black;
+}
+
+.news-text a{
+    font-size: .875rem;
+    transition: .3s;
+
+    color: #545454;
+}
+
+.news-text h3 a:hover{
+    color: #414141;
+}
+.news-text a:hover{
+    transition: .3s;
+
+    color: #949494;
+}
+
+.page-number{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.page-number ul{
+    display: flex;
+    flex-direction: row;
+
+    gap: 5px;
 }

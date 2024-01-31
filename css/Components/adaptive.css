@@ -1,0 +1,127 @@
+/* header */
+
+@media (max-width: 47.9375rem){
+    .header__logo{
+        display: block;
+        position: relative;
+        z-index: 70;
+    }
+    
+    .header__burger{
+        display: block;
+        position: relative;
+        margin-right: 50px;
+
+        width: 30px;
+        height: 20px;
+
+        z-index: 50;
+    }
+    .header__burger span{
+        position: absolute;
+        background-color: black;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0;
+        top: 9px;
+
+        transition: .4s;
+    }
+
+    .header__burger::before,
+    .header__burger::after{
+        content: '';
+        background-color: black;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0;
+
+        transition: .7s;
+    }
+    .header__burger::before{
+        top: 0;
+    }
+    .header__burger::after{
+        bottom: 0;
+    }
+
+    .header__burger.active span{
+        transform: scale(0);
+    }
+
+    .header__burger.active::before{
+        transform: rotate(225deg);
+        top: 9px;
+    }
+    .header__burger.active::after{
+        transform: rotate(-225deg);
+        bottom: 9px;
+    }
+
+    .header__content{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    .nav{
+        display: block;
+
+        align-items: center;
+        
+        text-align: center;
+        position: fixed;
+        top: -1000%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(255, 255, 255);
+
+        padding-top: 100px;
+
+
+    }
+
+    .nav__list{
+        display: block;
+
+        align-items: center;
+        
+        text-align: center;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(255, 255, 255);
+    }
+    .nav__list li {
+        margin-top: 30px;
+    }
+
+    .nav__list li p a{
+        margin-top: 20px;
+
+        font-size: 1.875rem;
+    }
+    .dropdown {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .dropdown-menu {
+        margin: 0 auto;
+
+        display: none;
+        position: relative;
+        
+        gap: 5px;
+    
+        background-color: white;
+        margin-top: 20px;
+        padding: 5px 10px 10px;
+    
+        box-shadow: 0px 1px 7px  rgb(156, 156, 156);
+        border-radius: 15px;
+    }
+}

@@ -1,6 +1,8 @@
 @import '../css/Components/header.css';
 @import '../css/Components/main.css';
 @import '../css/Components/footer.css';
+@import '../css/Components/adaptive.css';
+
 
 /*******************************************************/
 
@@ -33,5 +35,7 @@ body{height: 100%; font-family: 'Spectral SC', serif;}
     padding-right: .625rem;
     margin: 0 auto;
 }
+
+
 
 /*******************************************************/
