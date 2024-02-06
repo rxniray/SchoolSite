@@ -25,12 +25,12 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 /*******************************************************/
 
 body{height: 100%; font-family: 'Spectral SC', serif;}
-.wrapper{min-height: 100%; display: flex; flex-direction: column;}
+.wrapper{min-height: 100%; display: flex; flex-direction: column; overflow: hidden; }
 
 /*******************************************************/
 
 [class*="__container"]{
-    width: 75rem; 
+    max-width: 75rem; 
     padding-left: .625rem;
     padding-right: .625rem;
     margin: 0 auto;

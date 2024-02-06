@@ -1,6 +1,18 @@
 /* header */
 
 @media (max-width: 47.9375rem){
+    body.lock{
+        overflow: hidden;
+    }
+    .header__content{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+
+        overflow: scroll;
+
+    }
+
     .header__logo{
         display: block;
         position: relative;
@@ -10,7 +22,6 @@
     .header__burger{
         display: block;
         position: relative;
-        margin-right: 50px;
 
         width: 30px;
         height: 20px;
@@ -60,16 +71,13 @@
         bottom: 9px;
     }
 
-    .header__content{
-        display: flex;
-        justify-content: space-between;
-        flex-direction: row;
-    }
+    
     .nav{
         display: block;
 
         align-items: center;
-        
+        overflow: scroll;
+
         text-align: center;
         position: fixed;
         top: -1000%;
@@ -78,17 +86,17 @@
         height: 100%;
         background-color: rgb(255, 255, 255);
 
-        padding-top: 100px;
-
-
+        padding-top: 30px;
     }
 
     .nav__list{
+        overflow: scroll;
+
         display: block;
 
         align-items: center;
-        
         text-align: center;
+        
         position: fixed;
         width: 100%;
         height: 100%;
@@ -97,12 +105,8 @@
     .nav__list li {
         margin-top: 30px;
     }
+    
 
-    .nav__list li p a{
-        margin-top: 20px;
-
-        font-size: 1.875rem;
-    }
     .dropdown {
         position: relative;
         display: flex;
@@ -110,18 +114,152 @@
         flex-direction: column;
     }
     .dropdown-menu {
+        
         margin: 0 auto;
-
+        margin-top: 15px;
         display: none;
         position: relative;
         
         gap: 5px;
     
         background-color: white;
-        margin-top: 20px;
+        /* margin-top: 20px; */
         padding: 5px 10px 10px;
     
         box-shadow: 0px 1px 7px  rgb(156, 156, 156);
         border-radius: 15px;
+    }
+
+    .dropdown-menu li{
+        margin: 0;
+    }
+
+
+}
+
+/* Ahtung Bord */
+
+/* about */
+
+@media(max-width:889px){
+    .about-image {
+        width: 200px;
+        height: 200px;
+    }
+
+    @media(max-width:700px){
+        .about-image {
+            width: 175px;
+            height: 175px;
+        }
+
+        .about__block:hover .about__block-info {
+            font-size: 18px;
+        }
+
+        @media(max-width:620px){
+            .about-image {
+                width: 150px;
+                height: 150px;
+            }
+            .about__block-info {
+                font-size: 14px;
+            }
+            .about__block:hover .about__block-info {
+                font-size: 16px;
+            }
+
+            @media(max-width:535px){
+                .main-section__content{
+                    padding-bottom: 30px;
+                }
+                .about__block{
+                    margin: 0;
+                }
+                .about-content__blocks {
+                    gap: 20px;
+                    width: 100%;
+
+                    display: flex; 
+                    align-items: center;
+                    
+                    flex-direction: row;
+                    
+                    justify-content: center;
+                    flex-wrap: wrap;
+                }
+
+                @media(max-width:535px){
+                    .about-image {
+                        width: 200px;
+                        height: 200px;
+                    }
+
+                    .about__block-info {
+                        font-size: 16px;
+                    }
+            
+                    .about__block:hover .about__block-info {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }   
+    }
+}
+
+/* Blog */
+
+@media (max-width:66.25rem){
+    .news-block {
+        max-width: 800px;
+    }
+
+    @media (max-width: 56.25rem){
+        .news-block {
+            max-width: 600px;
+            
+        }
+
+        .news-text p{
+            -webkit-line-clamp: 2; /* Число отображаемых строк */
+            display: -webkit-box; /* Включаем флексбоксы */
+            -webkit-box-orient: vertical; /* Вертикальная ориентация */
+            overflow: hidden; /* Обрезаем всё за пределами блока */
+        }
+
+        @media (max-width: 42.25rem){
+            .news-block__content{
+                flex-direction: column;
+
+            }
+            .news-block {
+                max-width: 400px;
+            }
+            .news-image {
+                width: 100%;
+                height: 100%;
+            
+                border-radius: 15px;
+            }
+            
+            .news-text p{
+                font-size: 12px;
+            }
+            @media (max-width: 32.6875rem) {
+                .news-search__block{
+                    width: 100%;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 10px;
+                }
+            }
+
+            @media (max-width: 30rem) {
+                .news-block {
+                    max-width: 200px;
+                }
+            }
+        }
     }
 }
